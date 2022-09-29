@@ -1,0 +1,48 @@
+:root {
+    /* unchanging colors */
+
+    /* changing colors (light by default */
+    --navbar-color: #696969; /* light: #696969, dark: #212529 */
+    --dropdown-color: #aaaaaa; /* light: #aaaaaa, dark: #2c3035 */
+    --background-color: #f2f2f2; /* light: #f2f2f2, dark: #2d2d2d */ 
+    --text-color: #000000; /* light: #000000, dark: #f8f9fa */
+    --content-background: ; /* light: , dark: */
+}
+
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.navbar {
+    background-color: var(--navbar-color);
+}
+
+.changing-text {
+    color: var(--text-color);
+}
+
+.dropdown-menu {
+    background-color: var(--dropdown-color);
+}
+
+.dropdown-item:hover {
+    background-color: var(--navbar-color);
+}
+
+.login-btn {
+    color: var(--text-color);
+}
+
+.navbar-toggler-icon {
+    color: var(--text-color);
+}
+
+.theme-switcher {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    width: 140px;
+}
