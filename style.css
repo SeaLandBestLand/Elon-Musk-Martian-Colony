@@ -78,3 +78,28 @@ body {
     min-width: fit-content;
     min-height: fit-content;
 }
+
+.intro-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 33%;
+}
+
+.intro-button {
+    display: flex;
+    min-width: fit-content;
+    min-height: fit-content;
+    font-size: 20px;
+}
+
+@media (max-width: 900px) {
+    .intro-button {
+        display: none;
+    }
+}
