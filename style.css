@@ -2,7 +2,7 @@
     /* unchanging colors */
 
     /* changing colors (light by default */
-    --navbar-color: #696969; /* light: #696969, dark: #212529 */
+    --navbar-color: #696969; /* light: #f2f2f2, dark: #212529 */
     --dropdown-color: #aaaaaa; /* light: #aaaaaa, dark: #2c3035 */
     --background-color: #f2f2f2; /* light: #f2f2f2, dark: #2d2d2d */ 
     --text-color: #000000; /* light: #000000, dark: #f8f9fa */
@@ -17,6 +17,11 @@ body {
 
 .navbar {
     background-color: var(--navbar-color);
+}
+
+.logo {
+    width: auto;
+    height: 50%;
 }
 
 .changing-text {
@@ -45,4 +50,31 @@ body {
     align-items: center;
     padding: 0px;
     width: 140px;
+}
+
+.intro {
+    position: relative;
+}
+
+.intro-img {
+    width: 100%;
+    height: auto;
+}
+
+.intro-first-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    backdrop-filter: blur(5px);
+    color: #f8f9fa;
+    width: 20%;
+    height: 10%;
+    min-width: fit-content;
+    min-height: fit-content;
 }
