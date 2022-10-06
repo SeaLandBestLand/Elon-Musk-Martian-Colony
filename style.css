@@ -23,6 +23,11 @@ body {
     height: 50%;
 }
 
+.nav-link {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 .changing-text {
     color: var(--text-color);
 }
@@ -108,11 +113,19 @@ body {
 .card {
     background-color: var(--content-background);
     box-shadow: 5px 5px 5px #000000;
+    margin: 10px;
     width: 18rem;
 }
 
 @media (max-width: 1000px) {
     .intro-button {
         display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .nav-link {
+        margin-left: 0px;
+        margin-right: 0px;
     }
 }
